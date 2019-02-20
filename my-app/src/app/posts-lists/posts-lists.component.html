@@ -1,3 +1,7 @@
+<div class="heading">
+  All Posts
+</div>
+
 <div *ngIf="posts; else loading">
   <app-post-view *ngFor="let post of posts" [post]="post"></app-post-view>
 </div>
