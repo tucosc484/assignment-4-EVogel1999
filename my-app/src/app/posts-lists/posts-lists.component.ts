@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { MatLoadingSpinner } from '@angular/material';
 
 @Component({
   selector: 'app-posts-lists',
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./posts-lists.component.scss']
 })
 export class PostsListsComponent implements OnInit {
+
+  posts: {
+    userId: number;
+    id: number;
+    title: string;
+    body: string;
+  }[];
 
   constructor() { }
 
