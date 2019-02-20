@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { PostsListsComponent } from './posts-lists/posts-lists.component';
 import { PostViewComponent } from './post-view/post-view.component';
 import { PostComponent } from './post/post.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsListsComponent,
     PostViewComponent,
-    PostComponent
+    PostComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
