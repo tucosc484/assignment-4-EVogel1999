@@ -15,11 +15,11 @@ export class PostsListsComponent implements OnInit {
 
   ngOnInit() {
     this.service.getPosts()
-    .toPromise()
-    .then(val => {
-      this.posts = val;
-    })
-    .catch(e => console.error(e));
+    .subscribe(val => {
+      if (val) {
+        this.posts = val;
+      }
+    });
   }
 
 }
