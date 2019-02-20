@@ -1,0 +1,38 @@
+
+.card {
+    -moz-transition-duration: .2s;
+    transition-duration: .2s;
+    color: #116466;
+    background-color: #d1e8e2;
+    margin: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 26px;
+    cursor: pointer;
+
+    &:hover {
+        -moz-transition-duration: .4s;
+        transition-duration: .4s;
+        background-color: #116466;
+        color: #d1e8e2;
+
+        hr {
+            background-color: #d1e8e2;
+        }
+    }
+
+    hr {
+        border:none;
+        height: 2px;
+        background-color: #116466;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .body {
+        font-size: 18px;
+    }
+}
