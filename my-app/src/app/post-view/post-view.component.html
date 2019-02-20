@@ -1,7 +1,9 @@
-<div class="card">
+<div class="card" routerLink="/posts/{{ post.id }}" routerLinkActive="active">
   {{ post.title }}
   <hr>
   <div class="body">
     {{ post.body }}
   </div>
 </div>
+
+<router-outlet></router-outlet>
