@@ -1,5 +1,29 @@
-<p>
-  post works!
-</p>
+<div *ngIf="post && comments; else loading">
+  <div class="post">
+    <div class="title">Post:</div>
+    <div class="wrapper">
+      <div class="post-title">
+        {{ post.title }}
+      </div>
+      <hr>
+      {{ post.body }}
+    </div>
+  </div>
+  <div class="comments">
+    Comments:
+    <div class="card">
+      <!--<app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>-->
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="center">
+    <div class="caption">
+      Loading...
+    </div>
+    <mat-spinner style="display: inline-block"></mat-spinner>
+  </div>
+</ng-template>
 
 <router-outlet></router-outlet>
