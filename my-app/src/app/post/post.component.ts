@@ -5,7 +5,8 @@ import { ActivatedRoute } from '@angular/router'
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  styleUrls: ['./post.component.scss'],
+  providers: [ ServiceService ]
 })
 export class PostComponent implements OnInit {
 

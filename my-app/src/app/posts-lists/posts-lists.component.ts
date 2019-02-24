@@ -5,7 +5,8 @@ import { ServiceService } from '../service.service';
 @Component({
   selector: 'app-posts-lists',
   templateUrl: './posts-lists.component.html',
-  styleUrls: ['./posts-lists.component.scss']
+  styleUrls: ['./posts-lists.component.scss'],
+  providers: [ ServiceService ]
 })
 export class PostsListsComponent implements OnInit {
 

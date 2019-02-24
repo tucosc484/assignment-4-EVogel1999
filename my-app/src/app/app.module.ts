@@ -11,6 +11,8 @@ import { PostViewComponent } from './post-view/post-view.component';
 import { PostComponent } from './post/post.component';
 import { CommentComponent } from './comment/comment.component';
 
+import { ServiceService } from './service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ import { CommentComponent } from './comment/comment.component';
     MatProgressSpinnerModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ ServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
